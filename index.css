@@ -157,9 +157,9 @@ a{
     height: fit-content;
     /* width: min(90%, 1200px); */
     display: flex;
-    transition-property: height;
+    /* transition-property: height, border-top; */
     transition-duration: 2s;
-    transition-timing-function: cubic-bezier(0.71, 0.29, 0.45, 1.56);
+    transition-timing-function: cubic-bezier(0.07, 1.13, 0.43, 1.92);
 }
 
 .get-started{
