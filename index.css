@@ -153,9 +153,10 @@ a{
 
 #main-program{
     margin: auto;
-    width: min(80%, 1400px);
+    width: fit-content;
+    height: fit-content;
+    /* width: min(90%, 1200px); */
     display: flex;
-    border: 2px solid black;
     transition-property: height;
     transition-duration: 2s;
     transition-timing-function: cubic-bezier(0.71, 0.29, 0.45, 1.56);
