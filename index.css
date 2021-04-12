@@ -157,7 +157,7 @@ a{
     height: fit-content;
     /* width: min(90%, 1200px); */
     display: flex;
-    /* transition-property: height, border-top; */
+    flex-direction: column;
     transition-duration: 2s;
     transition-timing-function: cubic-bezier(0.07, 1.13, 0.43, 1.92);
 }
@@ -177,6 +177,75 @@ a{
     border: 0.08rem solid #ddd;
     cursor: pointer;
     transform: translate(0, 0);
+}
+
+.top{
+    display: none;
+    width: 100%;
+    height: 75%;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.table{
+    height: min(81vw, 54vh);
+    margin: auto;
+    aspect-ratio: 1/1;
+    overflow: auto;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+}
+
+#table{
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+    border: 0.5px solid black;
+}
+td{
+    border: 0.5px solid black;
+    text-align: center;
+}
+
+.bottom{
+    display: none;
+    height: 25%;
+    width: 100%;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.takeAlgoInput{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.takeAlgoInput>*{
+    width : 90%;
+    margin: 0 auto;
+    line-height: 3.5vh;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    color: white;
+}
+
+.ans{
+    width: fit-content;
+    display: grid;
+    font-size: 4rem;
+    padding-right: 4vw;
+    place-items: center;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+}
+
+.ans:hover{
+    cursor: pointer;
 }
 
 .team{
@@ -284,6 +353,15 @@ footer>div{
     .button-wrapper{
         flex-direction: column;
     }
+
+    /* .takeAlgoInput{
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
+    }
+    .takeAlgoInput>*{
+        width: 80%;
+    } */
 
     .team-images{
         flex-direction: column;
